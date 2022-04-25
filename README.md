@@ -9,8 +9,8 @@ Possue autocomplete das bibliotecas e guarda usuário e senha do servidor Zabbix
 Se você usa docker:
 
 ```shell
-docker build -t monitoringartist/zapix .
-docker run -p 8080:80 -d monitoringartist/zapix
+docker build -t ldetbr/zapix .
+docker run -p 8080:80 -d ldetbr/zapix
 ```
 
 Depois disso, você pode acessar http://localhost:8080 no navegador
