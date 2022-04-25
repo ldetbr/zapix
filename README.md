@@ -3,7 +3,7 @@
 # Zapix - online Zabbix API tool
 
 Visit http://monitoringartist.github.io/zapix/ and test Zabbix API queries
-in the browser. Autocomplete detects used Zabbix version (3.0/3.2/3.4) automatically
+in the browser. Autocomplete detects used Zabbix version (3.0/3.2/3.4/4.0/6.0) automatically
 and it will offer only API methods and documentation related for connected Zabbix
 version, however you can use still write older/newer methods manually. All
 credentials are stored in your browser only. See [examples](#examples).
