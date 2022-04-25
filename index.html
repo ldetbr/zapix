@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>ZAPIX - online Zabbix API tool</title>    
+	<title>ZAPIX - Zabbix API Online</title>    
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="icon" href="assets/favicon.png">        
     <meta content="Zapix - online Zabbix API tool" property="og:title">
@@ -26,10 +26,10 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<span class="brand"><a href="#">ZAPIX</a></span>
+			<span class="brand"><a href="#">ZAPIX 6</a></span>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li><a data-toggle="modal" href="#connections">Connect</a></li>
+					<li><a data-toggle="modal" href="#connections">Conectar</a></li>
                     <li><a target="_blank" href="https://www.zabbix.com/documentation/current/manual/api" onclick="this.href='https://www.zabbix.com/documentation/'+zabbixVersion+'/manual/api'; return true;">Zabbix API manual</a></li>
                     <li><a target="_blank" href="https://github.com/ldetbr/zapix">Star e fork no GitHub</a></li>
                     <li id="httpsli"><a href="#" id="https" title="Warning: you may not be able to connect to http Zabbix API endpoints"><i class="icon-lock" aria-hidden="true"></i> Switch to https</a></li>
@@ -45,7 +45,7 @@
 <div class="modal" id="connections" style="display: none;">
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">×</a>
-		<h3>Connection manager</h3>
+		<h3>Gerenciador de Conexões</h3>
 	</div>
 	<div class="modal-body">
 		<div class="row">
@@ -60,9 +60,9 @@
 					<label for="xdebugssid">X-DEBUG SID</label>
 					<input id="xdebugssid" type="text" name="xdebugssid" />
 					<div class="control-group">
-						<button class="btn" type="button" id="connAdd">Store</button>
+						<button class="btn" type="button" id="connAdd">Gravar</button>
 						<button class="btn btn-primary" type="button" id="loginButton">
-							Connect
+							Conectar
 							<i class="icon-share-alt icon-white"></i>
 						</button>
 					</div>
@@ -73,7 +73,7 @@
 					<label for="connList">Historico de Conexões</label>
 					<select size="12" id="connList" name="connections"></select>
 					<div class="control-group">
-						<button class="btn btn-mini" type="button" id="connRemove">Remove</button>
+						<button class="btn btn-mini" type="button" id="connRemove">Remover</button>
 					</div>
 				</form>
 			</div>
@@ -86,18 +86,18 @@
 <div class="modal" id="saveRequestModal" style="display: none;">
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">×</a>
-		<h3>Save request</h3>
+		<h3>Salvar request</h3>
 	</div>
 	<div class="modal-body">
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for="saveRequestName">Name</label>
+				<label class="control-label" for="saveRequestName">Nome</label>
 				<div class="controls">
 					<input type="text" id="saveRequestName">
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for="saveRequestMethod">Method</label>
+				<label class="control-label" for="saveRequestMethod">Metodo</label>
 				<div class="controls">
 					<input type="text" id="saveRequestMethod">
 				</div>
@@ -162,7 +162,7 @@
 						</div>
 						<div class="control-group">
 							<button id="execute" class="btn btn-primary has-spinner" type="button">                                
-								Check & execute
+								Testar e Rodar
 								<span class="play"><i class="icon-play icon-white"></i></span>
                                 <span class="spinner"><i class="icon-spin icon-refresh icon-white"></i></span>
 							</button>
