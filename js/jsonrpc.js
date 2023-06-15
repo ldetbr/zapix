@@ -18,7 +18,7 @@ var jsonRpc = (function($) {
 				hostname += '?XDEBUG_SESSION_START=' + params.xdebugsid;
 			}
 
-			this.call('user.login', {user: user, password: pass}, function(result) {
+			this.call('user.login', {username: user, password: pass}, function(result) {
 				sessionid = result;
 				$('#connections').modal('hide');
 				$("#connInfo").text('Connected to ' + config.host.replace('https://', '').replace('http://',''));
